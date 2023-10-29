@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app_v1 = FastAPI()
 
 
-@app_v1.get('/')
+@app_v1.get('/pokemon')
 async def get_pokemon():
     return {
         "Id": "0006",
